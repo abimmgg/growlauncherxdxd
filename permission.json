@@ -1,0 +1,72 @@
+[
+  {
+    "Name": "INTERNET",
+    "Description": "Allows an app to connect to the internet.",
+    "Misuse": "Stealing the user's personal data, transferring the user's data to third parties without permission."
+  },
+  {
+    "Name": "ACCESS_WIFI_STATE",
+    "Description": "Allows an app to access information about Wi-Fi networks.",
+    "Misuse": "Tracking the user's Wi-Fi usage, manipulating the user's Wi-Fi connection."
+  },
+  {
+    "Name": "ACCESS_NETWORK_STATE",
+    "Description": "Allows an app to access information about the network, such as connection status and network type.",
+    "Misuse": "Tracking the user's online activity, manipulating the user's network connection."
+  },
+  {
+    "Name": "VIBRATE",
+    "Description": "Allows an app to vibrate the device.",
+    "Misuse": "Disturbing the user with unwanted vibrations, draining the device's battery."
+  },
+  {
+    "Name": "WRITE_EXTERNAL_STORAGE",
+    "Description": "Allows an app to write files to the device's external storage.",
+    "Misuse": "Spreading malware to the user's device, modifying the user's files without permission."
+  },
+  {
+    "Name": "SYSTEM_ALERT_WINDOW",
+    "Description": "Allows an app to display an overlay on top of other apps.",
+    "Misuse": "Displaying disruptive or harmful advertisements, mimicking other apps to deceive the user."
+  },
+  {
+    "Name": "READ_EXTERNAL_STORAGE",
+    "Description": "Allows an app to read files from the device's external storage.",
+    "Misuse": "Stealing the user's personal data, such as photos, videos, and documents."
+  },
+  {
+    "Name": "FOREGROUND_SERVICE",
+    "Description": "Allows an app to create foreground services.",
+    "Misuse": "Running in the background without the user's knowledge, draining the device's battery."
+  },
+  {
+    "Name": "WAKE_LOCK",
+    "Description": "Allows an app to prevent the device from going to sleep.",
+    "Misuse": "Draining the device's battery, disrupting the user's sleep."
+  },
+  {
+    "Name": "com.android.vending.BILLING",
+    "Description": "No description",
+    "Misuse": "No misuse"
+  },
+  {
+    "Name": "com.google.android.gms.permission.AD_ID",
+    "Description": "No description",
+    "Misuse": "No misuse"
+  },
+  {
+    "Name": "com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE",
+    "Description": "No description",
+    "Misuse": "No misuse"
+  },
+  {
+    "Name": "RECEIVE_BOOT_COMPLETED",
+    "Description": "Allows an app to receive the ACTION_BOOT_COMPLETED that is broadcast after the system finishes booting.",
+    "Misuse": "Starting malicious services after the device boots, running in the background without the user's knowledge."
+  },
+  {
+    "Name": "launcher.powerkuy.growlauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "Description": "No description",
+    "Misuse": "No misuse"
+  }
+]
