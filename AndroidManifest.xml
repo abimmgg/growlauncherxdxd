@@ -1,0 +1,173 @@
+<manifest versionCode="6227" versionName="6.0.27" compileSdkVersion="34" compileSdkVersionCodename="14" package="launcher.powerkuy.growlauncher" platformBuildVersionCode="34" platformBuildVersionName="14">
+  <uses-sdk minSdkVersion="24" targetSdkVersion="34" />
+  <uses-feature name="android.hardware.location" required="false" />
+  <uses-feature name="android.hardware.location.gps" required="false" />
+  <uses-feature name="android.hardware.location.network" required="false" />
+  <uses-feature name="android.hardware.telephony" required="false" />
+  <uses-feature glEsVersion="null" required="true" />
+  <uses-permission name="android.permission.INTERNET" />
+  <uses-permission name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission name="android.permission.VIBRATE" />
+  <uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE" maxSdkVersion="34" />
+  <uses-permission name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission name="android.permission.READ_EXTERNAL_STORAGE" maxSdkVersion="32" />
+  <uses-permission name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission name="android.permission.POST_NOTIFICATIONS" />
+  <uses-permission name="android.permission.WAKE_LOCK" />
+  <uses-permission name="com.android.vending.BILLING" />
+  <uses-permission name="com.google.android.gms.permission.AD_ID" />
+  <uses-permission name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+  <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED" />
+  <uses-permission name="launcher.powerkuy.growlauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+  <queries>
+    <package name="com.google.android.webview" />
+    <package name="com.rtsoft.growtopia" />
+    <package name="com.facebook.katana" />
+    <intent>
+      <action name="androidx.browser.customtabs.CustomTabsService" />
+    </intent>
+    <intent>
+      <action name="android.intent.action.VIEW" />
+      <category name="android.intent.category.BROWSABLE" />
+      <data scheme="https" />
+    </intent>
+    <intent>
+      <action name="android.intent.action.VIEW" />
+      <category name="android.intent.category.BROWSABLE" />
+      <data scheme="http" />
+    </intent>
+    <intent>
+      <action name="android.intent.action.VIEW" />
+      <data scheme="market" />
+    </intent>
+    <intent>
+      <action name="android.support.customtabs.action.CustomTabsService" />
+    </intent>
+  </queries>
+  <permission name="launcher.powerkuy.growlauncher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" protectionLevel="null" />
+  <application theme="2131886089" label="2131820572" icon="2131230891" name="launcher.powerkuy.App" screenOrientation="6" configChanges="null" supportsRtl="true" isGame="true" extractNativeLibs="true" usesCleartextTraffic="true" resizeableActivity="true" roundIcon="2131230891" appCategory="0" appComponentFactory="androidx.core.app.CoreComponentFactory" requestLegacyExternalStorage="true">
+    <activity theme="2131886617" label="2131820773" name="launcher.powerkuy.growlauncher.module.EditTextActivity" exported="false" screenOrientation="10" configChanges="null" windowSoftInputMode="null" />
+    <activity theme="2131886617" label="2131820775" name="launcher.powerkuy.growlauncher.LuaManager" exported="false" screenOrientation="10" windowSoftInputMode="null" />
+    <activity theme="2131886625" label="2131820777" name="launcher.powerkuy.growlauncher.NoGrowtopia" exported="false" screenOrientation="10" />
+    <activity label="2131820572" name="com.rtsoft.growtopia.HelpshiftActivity" exported="true" excludeFromRecents="true" screenOrientation="6" configChanges="null" windowSoftInputMode="null">
+      <intent-filter>
+        <action name="android.intent.action.VIEW" />
+        <category name="android.intent.category.DEFAULT" />
+        <category name="android.intent.category.BROWSABLE" />
+        <data scheme="grow" />
+      </intent-filter>
+    </activity>
+    <activity theme="16973840" name="com.facebook.ads.AudienceNetworkActivity" exported="false" configChanges="null" />
+    <activity theme="16973840" name="com.tapjoy.TJAdUnitActivity" exported="false" configChanges="null" />
+    <activity theme="16973840" name="com.tapjoy.TJContentActivity" exported="false" configChanges="null" />
+    <activity theme="16973840" name="com.google.android.gms.common.api.GoogleApiActivity" exported="false" />
+    <activity theme="2131886625" label="2131820772" name="launcher.powerkuy.growlauncher.extra.SettingAcitvity" exported="false" screenOrientation="7" configChanges="null" />
+    <activity name="launcher.powerkuy.DebugActivity" exported="false" />
+    <activity theme="2131886617" name="com.rtsoft.growtopia.Main" exported="true" launchMode="2" screenOrientation="6" configChanges="null" windowSoftInputMode="null" supportsPictureInPicture="true" />
+    <activity theme="2131886625" name="com.rtsoft.growtopia.PermissionActivity" screenOrientation="6" configChanges="null" background="null" />
+    <activity theme="16973830" label="2131820572" name="com.rtsoft.growtopia.CSTSWebViewActivity" exported="false" excludeFromRecents="true" screenOrientation="6" windowSoftInputMode="null" />
+    <activity theme="2131886625" name="launcher.powerkuy.growlauncher.MainModern" exported="true" screenOrientation="7" configChanges="null" windowSoftInputMode="null">
+      <intent-filter>
+        <action name="android.intent.action.MAIN" />
+        <category name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity theme="2131886625" name="launcher.powerkuy.growlauncher.script.ScriptMain" exported="true" screenOrientation="7" configChanges="null" windowSoftInputMode="null" />
+    <provider name="androidx.startup.InitializationProvider" exported="false" authorities="com.rtsoft.growtopia.androidx-startupa">
+      <meta-data name="androidx.lifecycle.ProcessLifecycleInitializer" value="androidx.startup" />
+      <meta-data name="com.unity3d.services.core.configuration.AdsSdkInitializer" value="androidx.startup" />
+      <meta-data name="androidx.work.WorkManagerInitializer" value="androidx.startup" />
+      <meta-data name="androidx.emoji2.text.EmojiCompatInitializer" value="androidx.startup" />
+      <meta-data name="androidx.profileinstaller.ProfileInstallerInitializer" value="androidx.startup" />
+    </provider>
+    <provider name="com.google.firebase.provider.FirebaseInitProvider" exported="false" authorities="com.rtsoft.growtopia.firebaseinitproviderz" initOrder="100" directBootAware="true" />
+    <provider name="com.facebook.ads.AudienceNetworkContentProvider" exported="false" authorities="launcher.powerkuy.growlauncher.AudienceNetworkContentProvider" />
+    <meta-data name="com.google.android.gms.version" value="2131427336" />
+    <meta-data name="com.google.android.play.billingclient.version" value="5.0.0" />
+    <service name="powerkuy.modmenu.Floating" exported="false" noHistory="true" />
+    <service name="launcher.powerkuy.growlauncher.luamanager.LuaManager" exported="false" noHistory="true" />
+    <service name="com.google.firebase.components.ComponentDiscoveryService" exported="false" directBootAware="true">
+      <meta-data name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar" value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" value="com.google.firebase.components.ComponentRegistrar" />
+      <meta-data name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" value="com.google.firebase.components.ComponentRegistrar" />
+    </service>
+    <service name="com.google.android.gms.measurement.AppMeasurementService" enabled="true" exported="false" />
+    <service name="com.google.android.gms.measurement.AppMeasurementJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="true" exported="false" />
+    <service name="androidx.work.impl.background.systemalarm.SystemAlarmService" enabled="2131034114" exported="false" directBootAware="false" />
+    <service name="androidx.work.impl.background.systemjob.SystemJobService" permission="android.permission.BIND_JOB_SERVICE" enabled="2131034116" exported="true" directBootAware="false" />
+    <service name="androidx.work.impl.foreground.SystemForegroundService" enabled="2131034115" exported="false" directBootAware="false" />
+    <service name="androidx.room.MultiInstanceInvalidationService" exported="false" directBootAware="true" />
+    <service name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" exported="false">
+      <meta-data name="backend:com.google.android.datatransport.cct.CctBackendFactory" value="cct" />
+    </service>
+    <service name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" permission="android.permission.BIND_JOB_SERVICE" exported="false" />
+    <receiver name="com.google.android.gms.measurement.AppMeasurementReceiver" enabled="true" exported="false" />
+    <receiver name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" enabled="true" exported="false" directBootAware="false" />
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.ACTION_POWER_CONNECTED" />
+        <action name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BATTERY_OKAY" />
+        <action name="android.intent.action.BATTERY_LOW" />
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.DEVICE_STORAGE_LOW" />
+        <action name="android.intent.action.DEVICE_STORAGE_OK" />
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.net.conn.CONNECTIVITY_CHANGE" />
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.RescheduleReceiver" enabled="false" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="android.intent.action.BOOT_COMPLETED" />
+        <action name="android.intent.action.TIME_SET" />
+        <action name="android.intent.action.TIMEZONE_CHANGED" />
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" enabled="2131034114" exported="false" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.work.impl.diagnostics.DiagnosticsReceiver" permission="android.permission.DUMP" enabled="true" exported="true" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+      </intent-filter>
+    </receiver>
+    <receiver name="androidx.profileinstaller.ProfileInstallReceiver" permission="android.permission.DUMP" enabled="true" exported="true" directBootAware="false">
+      <intent-filter>
+        <action name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+      </intent-filter>
+      <intent-filter>
+        <action name="androidx.profileinstaller.action.SKIP_FILE" />
+      </intent-filter>
+      <intent-filter>
+        <action name="androidx.profileinstaller.action.SAVE_PROFILE" />
+      </intent-filter>
+      <intent-filter>
+        <action name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+      </intent-filter>
+    </receiver>
+    <receiver name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" exported="false" />
+    <uses-library name="androidx.window.extensions" required="false" />
+    <uses-library name="androidx.window.sidecar" required="false" />
+  </application>
+</manifest>
